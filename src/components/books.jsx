@@ -30,7 +30,7 @@ class Books extends Component {
   };
 
   handleGenreSelect = (genre) => {
-    this.setState({ selectedGenre: genre, currentPage: 1 });
+    this.setState({ selectedGenre: genre, currentPage: 1, searchQuery: "" });
   };
 
   handleSearch = (query) => {
@@ -66,7 +66,7 @@ class Books extends Component {
     const { pageSize, currentPage, searchQuery } = this.state;
     // const { user } = this.props;
 
-    if (count === 0) return <p>No book found.</p>;
+    // if (count === 0) return <p>No book found.</p>;
 
     const { totalCount, data: books } = this.getPagedData();
 
