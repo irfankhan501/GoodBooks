@@ -1,0 +1,6 @@
+{
+    "jwtPrivateKey": "goodbooks_jwtPrivateKey",
+    "db": "mongodb://localhost/goodbooks",
+    "port": "3900",
+    "requiresAuth": true
+}
